@@ -1,0 +1,65 @@
+# IntelliJ
+.idea
+*.iml
+*.ipr
+*.iws
+
+build
+
+#Gradle
+.gradle
+*/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Created by https://www.gitignore.io/api/java
+
+### Java ###
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# End of https://www.gitignore.io/api/java
+
+*/out/
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# NodeJS
+node_modules
+package-lock.json
+yarn.lock
+
+# Ignore swap files
+*.swp
+
+# Ignore orig files
+*.orig
+
+# Ignore DS_STORE
+.DS_STORE
+
+.java-version
+
+src/MSSQLConfig.kt
