@@ -13,7 +13,7 @@ import org.jetbrains.exposed.sql.transactions.transaction
 class SPCallsImpl : StoreProcedureCalls {
     override fun getProduct(id: Int?): GetProductQueryResponse {
         val storedProcedureRawSQL = "exec cetyskart.get_product '$id'"
-        var products = ArrayList<ProductDTO>()
+        val products = ArrayList<ProductDTO>()
         Database.connect(
             EXPOSED_CONNECTION_STRING,
             EXPOSED_DRIVER,

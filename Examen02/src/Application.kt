@@ -51,9 +51,10 @@ fun Application.module(testing: Boolean = false) {
             call.respond(mapOf("hello" to "world"))
         }
 
-        get("$apiRoot/public/v1/Producto") {
-            val id: Int? = 1
-            call.respond(productApi.getProduct(ProductApi.GetProductRequest(id)))
+        get("$apiRoot/public/v1/Producto/{id}") {
+            val id= call.parameters["id"] ?: "0"
+            id.toInt()
+            call.respond(productApi.getProduct(ProductApi.GetProductRequest(id.toInt())))
         }
     }
 }
